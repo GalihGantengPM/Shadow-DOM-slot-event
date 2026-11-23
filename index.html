@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Diri — William Galih Wisanggeni</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Profil Diri</h1>
+    <h2>Foto Saya</h2>
+    <img src="gambargw2.jpeg" alt="Foto Profil" height="200" width="200">
+    <salam-pengguna nama="Galih"></salam-pengguna>
+    <tombol-tema></tombol-tema>
+    <button id="btn-info">Info Tambahan</button>        
+    <nav>
+      <ul>
+        <li><a href="#tambah-portofolio">Portofolio</a></li>
+        <li><a href="#komentar">Komentar</a></li>
+        <li><a href="#penulis">Tentang Penulis</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tambah-portofolio">
+      <h2>Tambah Portofolio / Artikel Baru</h2>
+      <input type="text" id="input-judul-artikel" placeholder="Judul Artikel" required>
+      <br><br>
+      <textarea id="input-isi-artikel" placeholder="Isi Artikel..." required></textarea>
+      <br>
+      <button type="button" id="btn-tambah-artikel">Tambah Artikel</button>
+    </section>
+
+    <section class="artikel-section">
+      <h2>Daftar Artikel</h2>
+      <daftar-artikel class="daftar-artikel" batas="5"></daftar-artikel>
+    </section>
+
+    <section id="komentar">
+      <h2>Tinggalkan Komentar</h2>
+      <form id="form-komentar">
+        <input type="text" id="input-nama" placeholder="Nama Anda" required minlength="3">
+        <textarea id="input-pesan" placeholder="Tulis komentar..." required minlength="5"></textarea>
+        <div id="pesan-error" class="pesan-error"></div>
+        <button type="submit">Kirim</button>
+        <button type="button" id="btn-hapus-semua">Hapus Semua Komentar</button>
+      </form>
+      <div id="daftar-komentar"></div>
+    </section>
+  </main>
+
+  <aside id="penulis">
+    <h2>Tentang Penulis (API)</h2>
+    <p>Nama: <span id="nama-penulis">Memuat...</span></p>
+    <p>Email: <span id="email-penulis">Memuat...</span></p>
+    <hr style="margin: 15px 0;">
+
+    <h2>Media Sosial</h2>
+    <a href="https://www.instagram.com/william_galih?stkn=MXMzdThqcnpmNDFsZQ==" target="_blank">
+      <img src="instagram.jpg" alt="Instagram" width="30" height="30">
+    </a>
+    <a href="https://www.tiktok.com/@wilwisngg?_r=1&_t=ZS-99fwA9JMl1u" target="_blank">
+      <img src="tiktok.png" alt="TikTok" width="30" height="30">
+    </a>
+    <a href="https://www.facebook.com/share/18xgrQWeiz/" target="_blank">
+      <img src="fb.jpg" alt="Facebook" width="30" height="30">
+    </a>
+  </aside>
+
+  <button id="btn-kembali-atas">⬆ Ke Atas</button>
+
+  <footer>
+    <p>&copy; 2026 Dibuat oleh William Galih Wisanggeni (NIM: 255314023)</p>
+    <button id="btn-reset">Reset Semua Data</button>
+  </footer>
+
+  <script src="komponen.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
